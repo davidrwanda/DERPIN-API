@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "53c1f6b0-49aa-4481-a1cd-6880de30a4af",
+		"name": "DERPIN-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39916406",
+		"_collection_link": "https://gold-meteor-81415.postman.co/workspace/doreville~d94435dd-dfd8-43cc-96fb-f1e38876e2b5/collection/39916406-53c1f6b0-49aa-4481-a1cd-6880de30a4af?action=share&source=collection_link&creator=39916406"
+	},
+	"item": [
+		{
+			"name": "Predictions-production",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"country\": \"Kenya\",\n  \"feature\": \"production\",\n  \"year\": 0,\n  \"crop\": \"Maize\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/predictions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"predictions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "711"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c7-d3DCNdFAgwKLQmUqL5UBV6WhgdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:39:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1a2b3c4d-5e6f-7g8h-9i0j\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Kenya\",\n        \"crop\": \"Maize\",\n        \"file\": \"kenya_maize_2024.csv\"\n    },\n    {\n        \"id\": \"2b3c4d5e-6f7g-8h9i-0j1k\",\n        \"feature\": \"yield\",\n        \"year\": \"2024\",\n        \"country_region\": \"Nigeria\",\n        \"crop\": \"Rice\",\n        \"file\": \"nigeria_rice_2024.csv\"\n    },\n    {\n        \"id\": \"3c4d5e6f-7g8h-9i0j-1k2l\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Ethiopia\",\n        \"crop\": \"Wheat\",\n        \"file\": \"ethiopia_wheat_2024.csv\"\n    },\n    {\n        \"id\": \"4d5e6f7g-8h9i-0j1k-2l3m\",\n        \"feature\": \"yield\",\n        \"year\": \"2024\",\n        \"country_region\": \"Tanzania\",\n        \"crop\": \"Cassava\",\n        \"file\": \"tanzania_cassava_2024.csv\"\n    },\n    {\n        \"id\": \"5e6f7g8h-9i0j-1k2l-3m4n\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Uganda\",\n        \"crop\": \"Beans\",\n        \"file\": \"uganda_beans_2024.csv\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Predictions-yield",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"country\": \"Nigeria\",\n  \"feature\": \"yield\",\n  \"year\": 0,\n  \"crop\": \"Rice\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/predictions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"predictions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "711"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c7-d3DCNdFAgwKLQmUqL5UBV6WhgdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:41:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1a2b3c4d-5e6f-7g8h-9i0j\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Kenya\",\n        \"crop\": \"Maize\",\n        \"file\": \"kenya_maize_2024.csv\"\n    },\n    {\n        \"id\": \"2b3c4d5e-6f7g-8h9i-0j1k\",\n        \"feature\": \"yield\",\n        \"year\": \"2024\",\n        \"country_region\": \"Nigeria\",\n        \"crop\": \"Rice\",\n        \"file\": \"nigeria_rice_2024.csv\"\n    },\n    {\n        \"id\": \"3c4d5e6f-7g8h-9i0j-1k2l\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Ethiopia\",\n        \"crop\": \"Wheat\",\n        \"file\": \"ethiopia_wheat_2024.csv\"\n    },\n    {\n        \"id\": \"4d5e6f7g-8h9i-0j1k-2l3m\",\n        \"feature\": \"yield\",\n        \"year\": \"2024\",\n        \"country_region\": \"Tanzania\",\n        \"crop\": \"Cassava\",\n        \"file\": \"tanzania_cassava_2024.csv\"\n    },\n    {\n        \"id\": \"5e6f7g8h-9i0j-1k2l-3m4n\",\n        \"feature\": \"production\",\n        \"year\": \"2024\",\n        \"country_region\": \"Uganda\",\n        \"crop\": \"Beans\",\n        \"file\": \"uganda_beans_2024.csv\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Crop-mapping",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/crop-mappings",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"crop-mappings"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "373"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"175-s5cGyJxs7lZ/QIIGoCkGPDpDjtA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:45:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"CRP001\",\n        \"crop\": \"Maize\",\n        \"year\": \"2024\",\n        \"file\": \"maize_data_2024.csv\"\n    },\n    {\n        \"id\": \"CRP002\",\n        \"crop\": \"Rice\",\n        \"year\": \"2024\",\n        \"file\": \"rice_data_2024.csv\"\n    },\n    {\n        \"id\": \"CRP003\",\n        \"crop\": \"Wheat\",\n        \"year\": \"2024\",\n        \"file\": \"wheat_data_2024.csv\"\n    },\n    {\n        \"id\": \"CRP004\",\n        \"crop\": \"Cassava\",\n        \"year\": \"2024\",\n        \"file\": \"cassava_data_2024.csv\"\n    },\n    {\n        \"id\": \"CRP005\",\n        \"crop\": \"Beans\",\n        \"year\": \"2024\",\n        \"file\": \"beans_data_2024.csv\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Publications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/publications?country=Senegal&year=2024&crop=Groundnut",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"publications"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Senegal"
+						},
+						{
+							"key": "year",
+							"value": "2024"
+						},
+						{
+							"key": "crop",
+							"value": "Groundnut"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/publications",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"publications"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "890"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37a-JQpQ4rZF1wae2pbrXZtkMN62K6Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:47:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"AAgWa Forecast Brief No.216\",\n        \"category\": \"aagwa_briefs\",\n        \"link\": \"https://doi.org/10.54067/acpf.216\",\n        \"image_banner\": \"https://akademiya2063.org/publications/AAgWa Crop Production Forecasts/covers/AAgWa-brief-216.png\",\n        \"publication_date\": \"2024-11-11T13:10:03.000Z\",\n        \"last_update_date\": \"2024-11-11T13:10:03.000Z\",\n        \"year\": 2024,\n        \"language\": \"english\",\n        \"country\": \"Senegal\",\n        \"crop\": \"Groundnut\",\n        \"brief_id\": \"AAgWa-brief-216.png\",\n        \"brief_number\": 216\n    },\n    {\n        \"id\": 2,\n        \"title\": \"AAgWa Forecast Brief No.215\",\n        \"category\": \"aagwa_briefs\",\n        \"link\": \"https://doi.org/10.54067/acpf.215\",\n        \"image_banner\": \"https://akademiya2063.org/publications/AAgWa Crop Production Forecasts/covers/AAgWa-brief-215.png\",\n        \"publication_date\": \"2024-11-11T13:10:03.000Z\",\n        \"last_update_date\": \"2024-11-11T13:10:03.000Z\",\n        \"year\": 2024,\n        \"language\": \"english\",\n        \"country\": \"Senegal\",\n        \"crop\": \"Rice\",\n        \"brief_id\": \"AAgWa-brief-215.png\",\n        \"brief_number\": 215\n    }\n]"
+				},
+				{
+					"name": "sample-country",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/publications?country=Senegal",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"publications"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "Senegal"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "890"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37a-JQpQ4rZF1wae2pbrXZtkMN62K6Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:51:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"AAgWa Forecast Brief No.216\",\n        \"category\": \"aagwa_briefs\",\n        \"link\": \"https://doi.org/10.54067/acpf.216\",\n        \"image_banner\": \"https://akademiya2063.org/publications/AAgWa Crop Production Forecasts/covers/AAgWa-brief-216.png\",\n        \"publication_date\": \"2024-11-11T13:10:03.000Z\",\n        \"last_update_date\": \"2024-11-11T13:10:03.000Z\",\n        \"year\": 2024,\n        \"language\": \"english\",\n        \"country\": \"Senegal\",\n        \"crop\": \"Groundnut\",\n        \"brief_id\": \"AAgWa-brief-216.png\",\n        \"brief_number\": 216\n    },\n    {\n        \"id\": 2,\n        \"title\": \"AAgWa Forecast Brief No.215\",\n        \"category\": \"aagwa_briefs\",\n        \"link\": \"https://doi.org/10.54067/acpf.215\",\n        \"image_banner\": \"https://akademiya2063.org/publications/AAgWa Crop Production Forecasts/covers/AAgWa-brief-215.png\",\n        \"publication_date\": \"2024-11-11T13:10:03.000Z\",\n        \"last_update_date\": \"2024-11-11T13:10:03.000Z\",\n        \"year\": 2024,\n        \"language\": \"english\",\n        \"country\": \"Senegal\",\n        \"crop\": \"Rice\",\n        \"brief_id\": \"AAgWa-brief-215.png\",\n        \"brief_number\": 215\n    }\n]"
+				},
+				{
+					"name": "sample-filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/publications?country=Senegal&year=2024&crop=Groundnut",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"publications"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "Senegal"
+								},
+								{
+									"key": "year",
+									"value": "2024"
+								},
+								{
+									"key": "crop",
+									"value": "Groundnut"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "448"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c0-XSBO9jWaAgo07cUS10K8RC7b7fo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 20:52:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"AAgWa Forecast Brief No.216\",\n        \"category\": \"aagwa_briefs\",\n        \"link\": \"https://doi.org/10.54067/acpf.216\",\n        \"image_banner\": \"https://akademiya2063.org/publications/AAgWa Crop Production Forecasts/covers/AAgWa-brief-216.png\",\n        \"publication_date\": \"2024-11-11T13:10:03.000Z\",\n        \"last_update_date\": \"2024-11-11T13:10:03.000Z\",\n        \"year\": 2024,\n        \"language\": \"english\",\n        \"country\": \"Senegal\",\n        \"crop\": \"Groundnut\",\n        \"brief_id\": \"AAgWa-brief-216.png\",\n        \"brief_number\": 216\n    }\n]"
+				}
+			]
+		}
+	]
+}

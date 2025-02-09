@@ -1,8 +1,15 @@
-   // src/modules/prediction/prediction.controller.ts
+// src/modules/prediction/prediction.controller.ts
 import { Controller, Get, Post, Body, Query } from '@nestjs/common';
 import { PredictionService } from './prediction.service';
 import { CreatePredictionDto, PredictionQuery } from './model/prediction.dto';
-import { ApiOperation, ApiResponse, ApiTags, ApiQuery, ApiExtraModels, getSchemaPath } from '@nestjs/swagger';
+import {
+  ApiOperation,
+  ApiResponse,
+  ApiTags,
+  ApiQuery,
+  ApiExtraModels,
+  getSchemaPath,
+} from '@nestjs/swagger';
 import { Prediction } from './model/prediction.entity';
 
 @Controller('predictions')
@@ -37,19 +44,19 @@ export class PredictionController {
   findAll(@Query() query: PredictionQuery) {
     return this.predictionService.findAll(query);
   }
- 
-//   @Post()
-//   @ApiOperation({ summary: 'Create a prediction' })
-//   @ApiResponse({
-//     status: 201,
-//     description: 'Successfully created a prediction',
-//     type: Prediction,
-//   })
-//   @ApiResponse({
-//     status: 400,
-//     description: 'Invalid input',
-//   })
-//   create(@Body() createPredictionDto: CreatePredictionDto) {
-//     return this.predictionService.create(createPredictionDto);
-//   }
+
+  //   @Post()
+  //   @ApiOperation({ summary: 'Create a prediction' })
+  //   @ApiResponse({
+  //     status: 201,
+  //     description: 'Successfully created a prediction',
+  //     type: Prediction,
+  //   })
+  //   @ApiResponse({
+  //     status: 400,
+  //     description: 'Invalid input',
+  //   })
+  //   create(@Body() createPredictionDto: CreatePredictionDto) {
+  //     return this.predictionService.create(createPredictionDto);
+  //   }
 }
