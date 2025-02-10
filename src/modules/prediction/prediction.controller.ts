@@ -1,7 +1,7 @@
 // src/modules/prediction/prediction.controller.ts
-import { Controller, Get, Post, Body, Query } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { PredictionService } from './prediction.service';
-import { CreatePredictionDto, PredictionQuery } from './model/prediction.dto';
+import { PredictionQuery } from './model/prediction.dto';
 import {
   ApiOperation,
   ApiResponse,
